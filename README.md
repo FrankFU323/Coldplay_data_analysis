@@ -17,10 +17,3 @@ The repo is structured as:
 ## Statement on LLM usage
 
 ChatGPT is used to help with the code and analysis. The complete chat history is included in ???.
-
-## Some checks
-
-- [ ] Change the rproj file name so that it's not starter_folder.Rproj
-- [ ] Change the README title so that it's not Starter folder
-- [ ] Remove files that you're not using
-- [ ] Update comments in R script.
