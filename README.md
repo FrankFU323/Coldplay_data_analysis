@@ -2,7 +2,7 @@
 
 ## Overview
 
-The paper *Exploring Coldplay’s Music Through Data Analysis* analyzes Coldplay’s discography using Spotify API data, focusing on tempo, energy, danceability, and song durations over time. Through data visualizations, it reveals trends like a correlation between tempo and energy and variations in song lengths by album release dates. Most songs fall within a consistent duration range of 3-5 minutes, with outliers in later years indicating longer tracks. Tempo and energy correlate with moderately high danceability, reflecting Coldplay’s balance between upbeat and introspective styles. The study highlights data visualization’s role in understanding musical evolution.
+The paper *Exploring Coldplay’s Music Through Data Analysis* analyzes Coldplay’s discography using Spotify API data, focusing on tempo, energy, danceability, and song durations over time. Through data visualizations, it reveals trends like a correlation between tempo and energy and variations in song lengths by album release dates. Most songs fall within a consistent duration range of 3-5 minutes, with outliers in later years indicating longer tracks. Tempo, energy and danceability seem to have low correlation. The study highlights data visualization’s role in understanding musical evolution through the analysis of Coldplay spotify data.
 
 ## File Structure
 
