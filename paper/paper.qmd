@@ -1,0 +1,99 @@
+---
+title: "Exploring Coldplay's Music Through Data Analysis"
+author: 
+  - Yun Chu
+  - Tianrui Fu
+  - Felix Li
+  - Chris Yong Hong Sen
+  - Wen Han Zhao
+  - Wenxin Xu
+thanks: "Code and data are available at: [https://github.com/FrankFU323/Coldplay_data_analysis.git]"
+date: today
+date-format: long
+format: pdf
+number-sections: true
+bibliography: references.bib
+---
+
+```{r}
+#| include: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(here)
+options(scipen = 999)
+```
+
+```{r}
+#| include: false
+#| warning: false
+#| message: false
+coldplay <- readRDS(here("data/00-raw_data/coldplay.rds"))
+```
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+coldplay <- as_tibble(coldplay)
+
+coldplay |>
+  mutate(album_release_date = ymd(album_release_date)) |>
+  ggplot(aes(
+    x = album_release_date,
+    y = duration_ms,
+    group = album_release_date
+  )) +
+  geom_boxplot() +
+  geom_jitter(alpha = 0.5, width = 0.3, height = 0) +
+  theme_minimal() +
+  labs(
+    x = "Album release date",
+    y = "Duration of song (ms)"
+  )
+```
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+library(GGally)
+
+coldplay <- as_tibble(coldplay)
+library(ggplot2)
+
+ggplot(coldplay, aes(x = tempo, y = danceability, color = energy)) +
+  geom_point(size = 3) +  # 设置点的大小
+  scale_color_gradient(low = "lightblue", high = "darkblue", name = "Energy") +  # 修正的渐变色语法
+  labs(title = "Danceability vs Tempo with Energy",
+       x = "Tempo (BPM)",
+       y = "Danceability",
+       color = "Energy") +
+  theme_minimal()  # 使用简洁主题
+```
+
+
+
+# Introduction
+ @sec-data....
+
+
+
+
+
+
+# Data {#sec-data}
+
+
+\newpage
+
+# Appendix
+We have used the following variables in this dataset:album_release_date, duration_ms, tempo, y = danceability, color = energy
+\newpage
+
+
+# References
+
+
