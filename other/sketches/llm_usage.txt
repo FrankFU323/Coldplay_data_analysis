@@ -133,6 +133,30 @@ Copy code
 }
 This entry includes the title, author, version, and CRAN URL. You can update the version number if you're using a different release.
 
+how to cite devtools::install_github("charlie86/spotifyr") in biblitex
+ChatGPT said:
+ChatGPT
+To cite devtools::install_github("charlie86/spotifyr") in BibTeX, you can format it as a software reference. Here’s an example:
+
+bibtex
+Copy code
+@misc{spotifyr,
+  author       = {Charlie Thompson},
+  title        = {spotifyr: R wrapper for Spotify's Web API},
+  year         = {2019},
+  note         = {GitHub repository},
+  url          = {https://github.com/charlie86/spotifyr},
+  howpublished = {\texttt{devtools::install\_github("charlie86/spotifyr")}}
+}
+This entry will reference the spotifyr package from its GitHub repository, specifying that it can be installed with devtools::install_github("charlie86/spotifyr"). You may adjust the author, title, and year as needed based on specific details for the package or author updates.
+
+
+
+
+
+
+
+
 
 
 
