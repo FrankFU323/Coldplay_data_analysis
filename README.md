@@ -16,4 +16,4 @@ The repo is structured as:
 
 ## Statement on LLM usage
 
-ChatGPT is used to help with the code and analysis. The complete chat history is included in ???.
+ChatGPT is used to help with the code and analysis. The complete chat history is included in other/sketches/llm_usage.txt.
